@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-memorex"
+version = "1.0.0"
+description = "Memory Explorer & Knowledge Graph Visualizer for Hermes Agent"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+# Zero external dependencies — stdlib only
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/hermes-memorex"
+Repository = "https://github.com/YOUR_USERNAME/hermes-memorex"
+Issues = "https://github.com/YOUR_USERNAME/hermes-memorex/issues"
+
+# Entry point for Hermes Agent plugin auto-discovery via pip
+[project.entry-points."hermes_agent.plugins"]
+memorex = "hermes_memorex:register"
+
+[tool.setuptools.packages.find]
+include = ["hermes_memorex*"]
+
+[tool.setuptools.package-data]
+hermes_memorex = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

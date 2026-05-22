@@ -1,0 +1,14 @@
+name: hermes-memorex
+version: "1.0.0"
+description: >
+  Memory Explorer & Knowledge Graph Visualizer for Hermes Agent.
+  Provides a local web dashboard for visually exploring your agent's
+  memory graph, skill evolution, and conversation history.
+author: hermes-memorex contributors
+license: MIT
+provides_tools:
+  - memorex_dashboard
+  - memorex_graph
+  - memorex_skills
+  - memorex_search
+  - memorex_export
