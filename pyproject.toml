@@ -27,9 +27,9 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/hermes-memorex"
-Repository = "https://github.com/YOUR_USERNAME/hermes-memorex"
-Issues = "https://github.com/YOUR_USERNAME/hermes-memorex/issues"
+Homepage = "https://github.com/somto8720/hermes-memorex"
+Repository = "https://github.com/somto8720/hermes-memorex"
+Issues = "https://github.com/somto8720/hermes-memorex/issues"
 
 # Entry point for Hermes Agent plugin auto-discovery via pip
 [project.entry-points."hermes_agent.plugins"]

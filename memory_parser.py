@@ -349,7 +349,7 @@ def parse_all_memory(hermes_dir: Optional[str | Path] = None) -> ParsedMemory:
     
     # 1. Check hermes_dir
     for pattern in memory_patterns:
-        for filepath in hermes_dir.rglob(pattern):
+        for filepath in hermes_dir.glob(pattern):
             if filepath.is_file():
                 found_files.add(filepath.resolve())
 
@@ -357,7 +357,7 @@ def parse_all_memory(hermes_dir: Optional[str | Path] = None) -> ParsedMemory:
     cwd_hermes = Path.cwd() / ".hermes"
     if cwd_hermes.exists():
         for pattern in memory_patterns:
-            for filepath in cwd_hermes.rglob(pattern):
+            for filepath in cwd_hermes.glob(pattern):
                 if filepath.is_file():
                     found_files.add(filepath.resolve())
 

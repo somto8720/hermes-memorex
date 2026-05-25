@@ -41,7 +41,7 @@ hermes plugins enable hermes-memorex
 pip install .
 
 # Or directly from GitHub
-pip install git+https://github.com/YOUR_USERNAME/hermes-memorex.git
+pip install git+https://github.com/somto8720/hermes-memorex.git
 ```
 
 ### Launch the Dashboard
